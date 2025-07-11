@@ -2,6 +2,10 @@
 theme: null
 remote_theme: null
 
+sass:
+  load_paths:
+    - assets/css
+
 title: Derek van Tilborg
 description: Portfolio
 # baseurl: "" # the subpath of your site, e.g. /blog
