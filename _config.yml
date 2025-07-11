@@ -1,4 +1,7 @@
 # Site settings
+theme: null
+remote_theme: null
+
 title: Derek van Tilborg
 description: Portfolio
 # baseurl: "" # the subpath of your site, e.g. /blog
