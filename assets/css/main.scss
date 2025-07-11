@@ -2,14 +2,14 @@
 ---
 body { background: red; }
 
-@import "lib/normalize";
-@import "lib/fontawesome";
-@import "lib/devicon";
+@import "_sass/lib/normalize";
+@import "_sass/lib/fontawesome";
+@import "_sass/lib/devicon";
 
-@import 'base';
-@import 'vars';
-@import 'animation';
-@import 'header';
-@import 'about';
-@import 'footer';
+@import '_sass/base';
+@import '_sass/vars';
+@import '_sass/animation';
+@import '_sass/header';
+@import '_sass/about';
+@import '_sass/footer';
 
