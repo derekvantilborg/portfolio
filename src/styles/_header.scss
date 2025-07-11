@@ -1,7 +1,3 @@
-body {
-  background: red !important;
-}
-
 #particles-js {
   background: $main;
   display: flex;               // already here ✅
@@ -21,7 +17,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   z-index: 1;
   text-align: center;
-  color:#FFF;
+  color:#000000;
 
   // ✅ Use flex to position header content
   flex: 1;
