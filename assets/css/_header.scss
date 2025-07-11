@@ -1,13 +1,11 @@
 #particles-js {
   background: $main;
-  display: flex;               // already here ✅
-  flex-direction: column;      // ✅ add this
-  justify-content: space-between; // ✅ add this
+  display: flex;
+  vertical-align: bottom;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
   .particles-js-canvas-el {
     height: 100vh !important;
   }
@@ -18,22 +16,12 @@
   z-index: 1;
   text-align: center;
   color:#FFF;
-
-  // ✅ Use flex to position header content
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;   // centers name + icons vertically
-  align-items: center;
-
-  // Remove absolute positioning, so flexbox works:
-  position: relative; // was absolute
-  top: auto;          // was 50%
-  left: auto;         // was 50%
-  transform: none;    // was translate(-50%, -50%)
+  position: absolute;
+  top: 50%;
+  left: 50%;
   margin: 0 auto;
-  padding-top: 40px; // ✅ a bit less space before your name
-
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   .site-title {
     font-size: 50px;
     display: block;
@@ -44,7 +32,6 @@
       font-size: 76px;
     }
   }
-
   .site-description {
     font-size: 20px;
     display: block;
@@ -57,15 +44,27 @@
   }
 }
 
+.header-links {
+  margin: 10px;
+  .link {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px;
+    @media only screen and (min-width:$cut){
+      font-size: 20px;
+    }
+  }
+}
+
 .header-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: auto;         // ✅ push icons down
-  margin-bottom: 40px;      // ✅ add more breathing room below icons
 
   text-align: center;
   a {
+    // no borders
     outline: 0 !important;
     border: none !important;
     outline-style: none !important;
@@ -102,16 +101,6 @@
   }
 }
 
-.header-image {
-  text-align: center;
-  margin-top: 20px;     // ✅ tweak for spacing above image
-  margin-bottom: 40px;  // ✅ more breathing room
-}
-
-.header-image img {
-  max-width: 25%; // or adjust as needed
-}
-
 .down {
   color: #FFF;
   position: absolute;
@@ -123,6 +112,7 @@
   font-size: 30px;
   line-height: 30px;
   cursor: pointer;
+  // no borders
   outline: 0 !important;
   border: none !important;
   outline-style: none !important;
@@ -147,4 +137,13 @@
         color: $sec;
       }
   }
+}
+
+.header-image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.header-image img {
+  max-width: 300px; /* adjust as needed */
 }
