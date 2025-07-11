@@ -57,6 +57,15 @@
   }
 }
 
+.header-image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.header-image img {
+  max-width: 150px; /* Adjust size as needed */
+}
+
 .header-icons {
   display: flex;
   justify-content: center;
