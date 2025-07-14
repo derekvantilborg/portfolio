@@ -1,0 +1,184 @@
+#about {
+  font-size: 120%;
+  
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+  }
+  svg {
+    width: 60px !important;
+    height: auto;
+  }
+}
+
+.tech {
+  margin: 10px;
+  flex: 1 1 0;
+  h2, h3 {
+    font-weight: 400;
+  }
+}
+
+.user {
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  p {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: $cut) {
+    flex-wrap: nowrap;
+    font-size: 75px;
+  }
+}
+
+.user-details {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  margin-top: 10px;
+  @media only screen and (min-width:$cut){
+    font-size: 24px;
+  }
+}
+
+.intro-with-image {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;   // stack image and text vertically
+    text-align: center;       // center the text under the image
+  }
+}
+
+.intro-image {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    width: 120px;  // slightly smaller image on small screens
+  }
+}
+
+.content-image {
+  width: 100%;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.tagline {
+  text-align: center;
+}
+
+.tagline a {
+  display: inline-block;
+  color: #000000;
+  font-size: 1.5rem;
+  margin-bottom: 0em;
+  text-decoration: none;
+      &:hover {
+      color: #212b35;
+    }
+}
+
+.tagline .subtext {
+  margin-top: 0em;  /* adjust this to reduce whitespace */
+  font-size: 1rem;
+  color: #000000;
+}
+
+.project-tabs {
+  text-align: center;
+}
+
+.tab-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* or whatever spacing */
+}
+
+.tab-icon {
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab-icon img {
+  width: 60px; /* Adjust as needed */
+  height: 60px;
+  border-radius: 50%;
+}
+
+.tab-icon.active img {
+  border: 3px solid #000; /* highlight active icon */
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab-pane h2 a {
+  text-decoration: underline;
+  color: #4B0082;
+}
+
+.tab-pane .content-block {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 20px auto;
+}
+
+.project-block {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project-title {
+  font-size: 1rem; /* adjust for your breakpoints */
+  font-weight: 800; /* bold */
+  margin: 0 0 0.2em 0;
+  line-height: 1.2;
+}
+
+.project-authors {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 0 0.2em 0;
+  line-height: 1.2;
+}
+
+.project-journal {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.project-journal a {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+  vertical-align: middle;
+}
+
+.project-journal a:hover {
+  opacity: 0.7;
+}
