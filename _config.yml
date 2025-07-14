@@ -1,0 +1,27 @@
+# Site settings
+theme: null
+remote_theme: null
+
+sass:
+  load_paths:
+    - assets/css
+
+title: Derek van Tilborg
+description: Portfolio
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: Derek van Tilborg
+user_description: I'm a PhD trained Molecular Machine Learning scientist from the Netherlands.
+user_title: Molecular Machine Learning Scientist
+email: dwvantilborg@gmail.com
+scholar_username: aHwUU2MAAAAJ
+linkedin_username: derekvantilborg
+github_username:  derekvantilborg
+# medium_username: lorem_ipsum
+# medium_url: lorem_ipsum.medium.com
+# gplus_username:  lorem_ipsum
+
+exclude: ['package.json', 'src', 'node_modules', 'vendor']
+#exclude: ['package.json', 'src', 'node_modules', 'vendor']
