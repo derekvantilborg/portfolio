@@ -151,11 +151,11 @@
 
   max-height: 50vh;   // 👈 limits the div’s vertical space
   overflow: hidden;    // 👈 prevents overflow if image is bigger
-  margin: 5px auto;   // 👈 optional: adds spacing if needed
+  margin: 10px;   // 👈 optional: adds spacing if needed
 }
 
 .header-image img {
-  //max-height: 100vh;
+  max-height: 50vh;
   width: auto;
   height: auto;
   display: block;
