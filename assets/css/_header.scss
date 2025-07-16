@@ -2,6 +2,8 @@
   background: $main;
   display: flex;
   vertical-align: bottom;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,12 +18,12 @@
   z-index: 1;
   text-align: center;
   color:#FFF;
-  position: absolute;
+  position: static;
   top: 40%;
   left: 50%;
   margin: 0 auto;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: none;
+  transform: none;
 
   width: 90%;
   max-width: 750px;
