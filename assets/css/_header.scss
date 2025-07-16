@@ -24,17 +24,16 @@
   transform: translate(-50%, -50%);
 
   width: 90%;
-  max-height: 15%;
+  //max-height: 15%;
   max-width: 750px;
 
   .site-title {
     font-size: 50px;
     display: block;
     line-height: 1;
-    margin-top: 5px;
+    margin: 1px;
     color: #FFF;
     @media only screen and (min-width:$cut){
-      margin: 1px;
       font-size: 76px;
     }
   }
