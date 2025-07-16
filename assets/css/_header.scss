@@ -24,7 +24,7 @@
   transform: translate(-50%, -50%);
 
   width: 90%;
-  //max-height: 15%;
+
   max-width: 750px;
 
   .site-title {
@@ -151,5 +151,6 @@
 }
 
 .header-image img {
+  max-height: 50%;
   max-width: 80%; /* adjust as needed */
 }
