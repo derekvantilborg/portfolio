@@ -149,13 +149,13 @@
   justify-content: center;
   align-items: center;
 
-  max-height: 50vh;   // 👈 limits the div’s vertical space
+  max-height: 40vh;   // 👈 limits the div’s vertical space
   overflow: hidden;    // 👈 prevents overflow if image is bigger
-  margin: 10px;   // 👈 optional: adds spacing if needed
+  margin: 15px;   // 👈 optional: adds spacing if needed
 }
 
 .header-image img {
-  max-height: 50vh;
+  max-height: 40vh;
   width: auto;
   height: auto;
   display: block;
