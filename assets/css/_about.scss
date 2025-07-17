@@ -61,13 +61,13 @@
 }
 
 .intro-image {
-  width: 150px;
+  width: 300px;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
 
   @media (max-width: 768px) {
-    width: 120px;  // slightly smaller image on small screens
+    width: 200px;  // slightly smaller image on small screens
   }
 }
 
