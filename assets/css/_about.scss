@@ -50,13 +50,23 @@
 
 .intro-with-image {
   display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
 
   @media (max-width: 768px) {
-    flex-direction: column;   // stack image and text vertically
-    text-align: center;       // center the text under the image
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .intro-text {
+      text-align: justify;
+      padding: 0 10px;
+    }
   }
 }
 
@@ -69,6 +79,16 @@
   @media (max-width: 768px) {
     width: 200px;  // slightly smaller image on small screens
   }
+}
+
+.intro-text {
+  flex: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  text-align: justify;
+  max-width: 800px;
+  color: #333;
 }
 
 .content-image {
