@@ -3,95 +3,18 @@
     <img src="assets/images/profile_picture.png" alt="Derek van Tilborg profile picture" class="intro-image">
     <div class="intro-text">
       <p>
-        I’m a PhD-trained scientist specializing in molecular machine learning for drug discovery,
+        I’m a PhD-trained scientist specializing in artificial intelligence for drug discovery,
         with both an experimental and computational background.
       </p>
+<!--      <p>-->
+<!--        My research focuses on developing and applying artificial intelligence in low-data regimes, leveraging active learning and new-->
+<!--        reliability estimation methods.-->
+<!--      </p>-->
       <p>
-        My research focuses on developing and applying artificial intelligence in low-data regimes, leveraging active learning and new
-        reliability estimation methods.
-      </p>
-      <p>
-        I have developed new deep learning methods and successfully brought them to the lab to discover new bioactive molecules,
+        I have developed new deep learning methods and brought my models to the lab to discover new bioactive molecules,
         generate nanobiologics, and design nanoparticles.
       </p>
     </div>
   </div>
 </div>
 
-<div class="project-tabs">
-  <div class="tab-icons">
-    <div class="tab-icon active" data-tab="reliability">
-      <img src="reliability-icon.svg" alt="Reliability Estimation">
-      <p>Reliability<br>estimation</p>
-    </div>
-    <div class="tab-icon" data-tab="active-learning">
-      <img src="active-learning-icon.svg" alt="Active Learning">
-      <p>Active<br>learning</p>
-    </div>
-    <div class="tab-icon" data-tab="nanobody">
-      <img src="nanobody-icon.svg" alt="Nanobody Design">
-      <p>Nanobody<br>design</p>
-    </div>
-    <div class="tab-icon" data-tab="nanoparticle">
-      <img src="nanoparticle-icon.svg" alt="Nanoparticle Design">
-      <p>Nanoparticle<br>design</p>
-    </div>
-  </div>
-
-  <hr />
-
-  <div class="tab-content">
-    <!-- Content for each tab -->
-
-    <div class="tab-pane active" data-tab="reliability">
-      <div class="project-block">
-        <h1 class="project-title"> Molecular deep learning at the edge of chemical space </h1>
-        <p class="project-authors"> Derek van Tilborg, Luke Rossen, and Francesca Grisoni </p>
-        <p class="project-journal"> <a href="https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/67d45bb181d2151a02600e0a/original/molecular-deep-learning-at-the-edge-of-chemical-space.pdf" target="_blank" aria-label="External link">Preprint 🔗</a></p>
-      </div>
-
-      <div class="content-block">
-        <div class="content-image">
-           <img src="assets/images/ood-01.svg" alt="Out of Distribution data" />
-           <img src="assets/images/ood-02.svg" alt="..." />
-           <img src="assets/images/ood-03.svg" alt="..." />
-           <img src="assets/images/ood-04.svg" alt="..." />
-           <img src="assets/images/ood-05.svg" alt="..." />
-           <img src="assets/images/ood-06.svg" alt="..." />
-           <img src="assets/images/ood-07.svg" alt="..." />
-           <img src="assets/images/ood-08.svg" alt="..." />
-           <img src="assets/images/ood-09.svg" alt="..." />
-        </div>
-      </div>
-    </div>
-
-    <div class="tab-pane" data-tab="active-learning">
-      <!-- Different content -->
-      <h2><a href="#">Active Learning Project Title</a></h2>
-      <p>Authors...</p>
-      <p>Journal 📄</p>
-      <div class="content-block">
-        <p> bla </p>
-      </div>
-    </div>
-
-    <!-- Add more tab-pane divs for each tab -->
-  </div>
-</div>
-
-
-
-
-<script>
-  document.querySelectorAll('.tab-icons .tab-icon').forEach(icon => {
-    icon.addEventListener('click', function() {
-      const tab = this.dataset.tab;
-
-      document.querySelectorAll('.tab-icons .tab-icon').forEach(i => i.classList.remove('active'));
-      this.classList.add('active');
-
-      document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
-      document.querySelector(`.tab-pane[data-tab="${tab}"]`).classList.add('active');
-    });
-  });
-</script>
