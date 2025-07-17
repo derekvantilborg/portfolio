@@ -17,13 +17,13 @@
     </div>
   </div>
 
-  <div class="intro-with-image">
+  <div class="intro-with-image fade-in-section">
     <img src="assets/images/paper_icon-01.svg" alt="Out of distribution and molecular reconstruction" class="intro-image">
     <div class="intro-text">
       <p>
-        Molecular deep learning at the edge of chemical space <br>
+        <b>Molecular deep learning at the edge of chemical space</b> <br>
         Derek van Tilborg, Luke Rossen, and Francesca Grisoni <br>
-        Preprint
+        <a href="https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/67d45bb181d2151a02600e0a/original/molecular-deep-learning-at-the-edge-of-chemical-space.pdf" target="_blank" aria-label="External link">Preprint 🔗</a>
       </p>
       <p>
         I introduced a new method to estimate model reliability, based on molecular reconstruction.
@@ -34,3 +34,24 @@
     </div>
   </div>
 </div>
+
+<script>
+  const faders = document.querySelectorAll('.fade-in-section');
+
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      appearOnScroll.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
