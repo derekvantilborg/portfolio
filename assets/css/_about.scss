@@ -81,6 +81,17 @@
   color: #333;
 }
 
+.intro-text a {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+  vertical-align: middle;
+}
+
+.intro-text a:hover {
+  opacity: 0.7;
+}
+
 .intro-image {
   width: 250px;
   height: auto;
@@ -168,41 +179,6 @@
   margin: 20px auto;
 }
 
-.project-block {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.project-title {
-  font-size: 1rem; /* adjust for your breakpoints */
-  font-weight: 800; /* bold */
-  margin: 0 0 0.2em 0;
-  line-height: 1.2;
-}
-
-.project-authors {
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 0 0 0.2em 0;
-  line-height: 1.2;
-}
-
-.project-journal {
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 0;
-  line-height: 1.2;
-}
-
-.project-journal a {
-  text-decoration: none;
-  font-size: inherit;
-  color: inherit;
-  vertical-align: middle;
-}
-
-.project-journal a:hover {
-  opacity: 0.7;
-}
 
 .fade-in-section {
   opacity: 0;
