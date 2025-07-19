@@ -1,21 +1,59 @@
-.footer {
-  background: $main;
-  padding: 10px 0;
-  margin-top: 100px;
+.custom-footer {
+  background-color: #d3d3d3;
+  padding: 2rem 0;
   text-align: center;
-  color: #FFF;
-  .love {
-    color: red;
+
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
   }
-  a {
-    text-decoration: none;
-    margin: 0;
-    color: #FFF;
-    &:hover{
-      color: $sec;
+
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    a {
+      // no borders
+      outline: 0 !important;
+      border: none !important;
+      outline-style: none !important;
+      -moz-outline-style: none !important;
+
+      padding: none;
+      margin: none;
     }
-    &:active {
-      color: $sec;
+
+    .icon {
+      text-align: center;
+      color: #FFF;
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 50%;
+      border: 2px solid #FFF;
+      transition: all .5s;
+
+      &:hover {
+        color: $main;
+        background: #FFF;
+      }
+
+      &:active {
+        color: $main;
+        background: #FFF;
+      }
+
+      @media only screen and (min-width: $cut) {
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        line-height: 30px;
+      }
     }
   }
 }
