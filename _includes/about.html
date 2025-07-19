@@ -103,9 +103,45 @@
     </div>
   </div>
 
-  <div class="fade-in-section">
-    <img  src="assets/images/ceres_picture.jpg" alt="Pretending to have an important meeting" class="intro-image">
-  </div>
+</div>
+
+<div class="header-icons">
+        {% if site.email %}
+        <a aria-label="Send email" href="mailto:{{ site.email }}"><i class="icon fa fa-envelope"></i></a>
+        {% endif %}
+        {% if site.scholar_username %}
+        <a aria-label="My Google Scholar" target="_blank" href="https://scholar.google.com/citations?user={{ site.scholar_username }}&hl=en">
+          <i class="icon fa">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 512 512"
+                 width="20"
+                 height="20"
+                 fill="currentColor"
+                 aria-hidden="true">
+              <path d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/>
+            </svg>
+          </i>
+        </a>
+        {% endif %}
+        {% if site.linkedin_username %}
+        <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
+        {% endif %}
+        {% if site.github_username %}
+        <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        {% endif %}
+
+            <a aria-label="My CV" target="_blank" href="assets/pdfs/Derek_van_Tilborg_cv_2page.pdf">
+          <i class="icon fa">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 16.64 8.4"
+                 width="20"
+                 height="20"
+                 fill="currentColor"
+                 aria-hidden="true">
+              <path d="M7.62.64v1.9c-.92-.59-1.76-.88-2.7-.88-1.85,0-2.81,1.22-2.81,2.58s1.01,2.51,2.76,2.51c.98,0,1.91-.31,2.79-.9v1.83c-.91.49-1.94.72-3.13.72C1.68,8.4,0,6.56,0,4.2,0,1.61,1.94,0,4.57,0,5.52,0,6.51.18,7.62.64Z"/><path d="M10.4.11l2.04,5.04L14.5.11h2.14l-3.6,8.26h-1.21L8.27.11h2.13Z"/>
+            </svg>
+          </i>
+        </a>
 
 </div>
 
